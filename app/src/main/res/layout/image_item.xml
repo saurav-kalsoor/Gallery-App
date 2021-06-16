@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="image"
+            type="com.example.galleryapp.model.Image" />
+    </data>
+
+    <com.example.galleryapp.layout.SquareLayout
+        android:clickable="true"
+        android:layout_margin="2dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/deleteSelected"
+            android:background="@drawable/border"
+            android:src="@drawable/ic_selected"
+            android:visibility="invisible"
+            android:layout_alignEnd="@id/imageViewItem"
+            android:layout_alignBottom="@id/imageViewItem"
+            android:layout_margin="8dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </com.example.galleryapp.layout.SquareLayout>
+
+
+
+</layout>

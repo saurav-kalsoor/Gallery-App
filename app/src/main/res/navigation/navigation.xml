@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/imageDisplayFragment">
+
+    <fragment
+        android:id="@+id/imageDisplayFragment"
+        android:name="com.example.galleryapp.imageDisplay.ImageDisplayFragment"
+        android:label="ImageDisplayFragment" >
+        <action
+            android:id="@+id/action_imageDisplayFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.galleryapp.viewPager.ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+</navigation>
