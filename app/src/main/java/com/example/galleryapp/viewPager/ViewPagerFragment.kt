@@ -13,6 +13,8 @@ import com.example.galleryapp.databinding.FragmentViewPagerBinding
 import com.example.galleryapp.imageDisplay.ImageDisplayViewModel
 import com.example.galleryapp.imageDisplay.ImageDisplayViewModelProvider
 
+//Commit
+
 class ViewPagerFragment : DialogFragment() {
 
     private lateinit var binding: FragmentViewPagerBinding
